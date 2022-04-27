@@ -9,3 +9,13 @@ source project-venv/bin/activate
 2. Install required packages
 cd cyber-project
 pip3 install -r requirements.txt
+3. Create two databases with a collection named users in each:
+use cyberStudents;
+db.createCollection('users');
+use cyberStudentsTest;
+db.createCollection('users');
+4. Once created the server contains functionality for the following;
+    registering new users (api/handlers/registration.py)
+    logging in (api/handlers/login.py)
+    logging out (api/handlers/logout.py)
+    displaying profile (api/handlers/user.py)
